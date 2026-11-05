@@ -221,6 +221,7 @@ body.loaded .fade-up{opacity:1;transform:none}
 .stat{background:var(--surface);padding:1.8rem 1.5rem;position:relative;overflow:hidden;transition:background .5s var(--ease)}
 .stat::before{content:"";position:absolute;inset:0;background:var(--accent);transform:translateY(101%);transition:transform .55s var(--ease)}
 .stat > *{position:relative}
+.stat:last-child:nth-child(odd){grid-column:1/-1}
 .stat:hover::before{transform:none}
 .stat:hover .num,.stat:hover p{color:var(--cream)}
 .num{font-family:var(--display);font-size:clamp(2.6rem,5vw,3.8rem);line-height:1;color:var(--accent-text);transition:color .4s}
@@ -448,14 +449,13 @@ footer{background:var(--burgundy);color:rgba(232,210,181,.7);margin:0 clamp(.6re
       </div>
       <div class="about-grid">
         <div class="about-copy">
-          <p class="about-lead" id="scrub">I turn product requirements into features that hold up in production — tested, debugged and shipped with the team.</p>
-          <p class="reveal">Right now I’m building a consultation booking platform at Lextria Research: slot holds, Razorpay payments with webhooks and automatic refunds, Google Calendar invites and an admin dashboard for the team.</p>
-          <p class="reveal" style="--d:.1s">Before that I built the React Native front end and FastAPI services for TripMacha, a travel app that generates itineraries from what you tell it. I’m drawn to enterprise applications, microservices and cloud-native work next.</p>
+          <p class="about-lead" id="scrub">I build software end to end — from the screens people use to the APIs and databases that power them.</p>
+          <p class="reveal">As a Software Engineer, I design and develop full-stack web and mobile applications. On the front end I work with React.js and React Native, and on the back end I build RESTful APIs with FastAPI, Node.js and Java, backed by SQL and NoSQL databases.</p>
+          <p class="reveal" style="--d:.1s">Day to day, that means turning requirements into working features, securing them with authentication, integrating third-party services, and testing and debugging until they’re ready for production — all in close collaboration with my team. I’m growing towards enterprise applications, microservices and cloud-native systems.</p>
         </div>
         <div class="stats reveal" style="--d:.15s">
           <div class="stat"><div class="num" data-count="2">0</div><p>Engineering roles</p></div>
           <div class="stat"><div class="num" data-count="25" data-suffix="+">0</div><p>Technologies used</p></div>
-          <div class="stat"><div class="num" data-count="9.4" data-dec="1">0</div><p>BCA CGPA</p></div>
           <div class="stat"><div class="num" data-count="4">0</div><p>Coursera certifications</p></div>
         </div>
       </div>
